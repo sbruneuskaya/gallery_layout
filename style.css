@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+footer {
+    height: 100px;
+    background: black;
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+    padding: 30px 0;
+}
+
+
+/*presentation*/
+main {
+    width: 500vw;
+    height: 100vh;
+    display: flex;
+}
+
+main section {
+    padding: 100px 0;
+    width: 100vw;
+    height: 100%;
+    background: #f5f5f5;
+}
+
+.style {
+    background: url("./assets/images/style.png") no-repeat center;
+    background-size: cover;
+}
+
+.girls {
+    background: url("./assets/images/girls.png") no-repeat center;
+    background-size: cover;
+}
+
+.book {
+    background: url("./assets/images/book.png") no-repeat center;
+    background-size: cover;
+}
+
+.fashion {
+    background: url("./assets/images/fashion.png") no-repeat center;
+    background-size: cover;
+}
+
+.photography {
+    background: url("./assets/images/photography.png") no-repeat center;
+    background-size: cover;
+}
+
+.gallery .logo {
+    background: url("assets/images/gallery.png") no-repeat center;
+    background-size: contain;
+    width: 35%;
+    height: 575px;
+}
+
+.photo .logo:nth-child(1) {
+    background: url("assets/images/gallery-one.png") no-repeat center;
+    background-size: contain;
+    width: 30%;
+    /*height: 575px;*/
+}
+
+.part-photo .logo:nth-child(1) {
+    background: url("assets/images/gallery-two.png") no-repeat center;
+    background-size: contain;
+    height: 575px;
+    width: 100%;
+}
+
+.part-photo .logo:nth-child(2) {
+    background: url("assets/images/gallery-three.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 575px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description {
+    max-width: 45%;
+    text-align: center;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.description div {
+    display: inline-block;
+}
+
+.photo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.part-photo {
+    width: 30%;
+}
+
+.photo p {
+    display: flex;
+    align-items: center;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 36px;
+    opacity: 0.2;
+
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 36px;
+    transform: rotate(90deg);
+    opacity: 0.2;
+    padding-left: 20%;
+}
+
+
+/*header*/
+header {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.menu-item {
+    cursor: pointer;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    box-shadow: 10px 5px 15px 5px #ffffff;
+    line-height: 0;
+}
+
+.menu-body {
+    display: flex;
+    width: 394px;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 154px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 1200px;
+}
+
+.subtitle {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button {
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    width: 160px;
+    height: 44px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.button a {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/*info*/
+.info {
+    height: 435px;
+}
+
+.button-project {
+    background: #FFFFFF;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.button-project a {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #111111;
+}
+
+.info-wrapper {
+    height: 113px;
+    margin-top: 10%;
+}
+
+
+/*form*/
+.form {
+    color: white;
+    max-width: 445px;
+    margin: 0 auto;
+}
+
+.form * {
+    outline: none;
+}
+
+.form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+}
+
+.form-title-wrapper {
+    width: 100%;
+}
+
+.subtitle {
+    margin-top: 39px;
+    max-width: 554px;
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.subtitle span {
+    border-bottom: 2px solid ;
+}
+
+.form-item {
+    margin-top: 15px;
+}
+
+.form-input {
+    padding: 18px 20px 16px;
+    width: 445px;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.form-input:focus {
+    -webkit-box-shadow: 0 0 15px #f5f5f5;
+    box-shadow: 0 0 15px #f5f5f5;
+}
+
+.form-input._error {
+    -webkit-box-shadow: 0 0 15px red;
+    box-shadow: 0 0 15px red;
+}
+
+.form-input::-webkit-input-placeholder {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.form-input::-moz-placeholder {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.form-input:-ms-input-placeholder {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.form-input::-ms-input-placeholder {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.form-input::placeholder {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.6px;
+    color: black;
+}
+
+.form-button {
+    margin-bottom: 88px;
+}
+
+.form-body {
+    position: relative;
+}
+
+.form-success {
+    display: none;
+}
+
+.form-body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-body._sending:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-body._success .form-container {
+    display: none;
+}
+
+.form-body._success .form-success {
+    display: block;
+}
+
+.form-success {
+    max-width: 417px;
+}
+
+.success-title {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+    margin: 0;
+}
+
+.success-description {
+    font-family: sofia_pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+    margin-top: 49px;
+}
+
+.success-description span {
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    font-family: 'STSong';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 36px;
+    opacity: 0.2;
+    margin: 100px 0;
+    padding-left: 20%;
+}
+
+
+/*footer*/
+
+.footer-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+}
+
